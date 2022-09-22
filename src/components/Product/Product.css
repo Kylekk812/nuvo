@@ -1,7 +1,7 @@
 .productImage{
     position: relative;
-    max-width: 100px;
-    max-height: 150px;
+    width: 120px;
+    height: 150px;
     float: left;
 }
 .productButton {
@@ -11,16 +11,6 @@
     display: flex;
     margin: 10px;
     margin-left: 35px;
-}
-.showMore{
-    float: left;
-}
-.showMore
-    :active{
-    color: lightskyblue;
-}
-#stay[id] {
-    color: red;
 }
 .fa-solid{
     margin-left: 10px;
