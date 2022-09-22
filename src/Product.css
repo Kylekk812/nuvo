@@ -1,0 +1,35 @@
+.productImage{
+    position: relative;
+    max-width: 100px;
+    max-height: 150px;
+    float: left;
+}
+.productButton {
+    margin-left: 15%;
+}
+.indiv_container{
+    display: flex;
+    margin: 10px;
+    margin-left: 35px;
+}
+.showMore{
+    float: left;
+}
+.showMore
+    :active{
+    color: lightskyblue;
+}
+#stay[id] {
+    color: red;
+}
+.fa-solid{
+    margin-left: 10px;
+}
+.fa-rotate-180{
+    margin-left: 10px;
+    color: white;
+}
+.fa-color{
+    margin-left: 10px;
+    color:lightskyblue
+}

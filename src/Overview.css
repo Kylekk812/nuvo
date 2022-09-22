@@ -1,0 +1,18 @@
+.overview_Container{
+    position: absolute;
+    /* margin-left: 50%; */
+    width: 450px;
+    height: 450px;
+    padding: 70px;
+    background: white;
+    text-align: left;
+    /* margin-left: 10px; */
+
+}
+#price{
+    font-size: 35px;
+}
+#cart{
+    background-color: lightblue;
+    color: white;
+}
