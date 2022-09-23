@@ -1,11 +1,10 @@
 .overview_Container{
-    opacity: 90%;
     width: 450px;
     height: 550px;
     padding: 70px;
-    background: rgb(46, 47, 48);
+    background: white;
     text-align: left;
-    color: white ;
+    color: black ;
 }
 .overview_Container
     :hover{
