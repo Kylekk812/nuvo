@@ -18,10 +18,12 @@ export default function Product({ item, getProduct }) {
             return (
                 <div key={proo.id} className='indiv_container'>
                     <img src={proo.image} alt='' className="productImage" onClick={(e) => {
+                         setTar([proo.id, true])
                         setShow(!toShow)
                         getProduct(proo.id)
                     }} />
                     <ul onClick={(e) => {
+                         setTar([proo.id, true])
                         setShow(!toShow)
                         getProduct(proo.id)
                     }} id='title'> {proo.title}</ul>
