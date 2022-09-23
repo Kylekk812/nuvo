@@ -1,6 +1,6 @@
 .overview_Container{
     opacity: 90%;
-    width: 450px;
+    width: 300px;
     height: 550px;
     padding: 70px;
     background: rgb(46, 47, 48);
@@ -24,11 +24,10 @@
     bottom: 0px;
     background-color: rgb(110, 194, 222);
     color: black;
-    padding: 10;
+    padding: 0;
     border:grey;
     width:100px;
     height: 55px;
     position: absolute;
-    bottom: 0;
-    margin-left: 10%;
+    margin-left: 5%;
 }

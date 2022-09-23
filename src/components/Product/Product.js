@@ -14,35 +14,37 @@ export default function Product({ item, getProduct }) {
     //dynamically capturing which chevron button need to change and all the rest remain still 
     //and render changes conditionally
     return (
-        item.map((proo, ind) => {
-            return (
-                <div key={proo.id} className='indiv_container'>
-                    <img src={proo.image} alt='' className="productImage" onClick={(e) => {
-                        setShow(!toShow)
-                        getProduct(proo.id)
-                    }} />
-                    <ul onClick={(e) => {
-                        setShow(!toShow)
-                        getProduct(proo.id)
-                    }} id='title'> {proo.title}</ul>
-                    <br></br>
-                    {(currTar[0] === proo.id && currTar[1]) ?
-                        <i className="fa-solid fa-circle-chevron-right fa-2x" id={proo.id} onClick={
-                            (e) => {
-                                setShow(!toShow);
-                                getProduct(proo.id);
-                            }}> </i> :
-                        <i className="fa-solid fa-circle-chevron-left fa-2x" id={proo.id} onClick={
-                            (e) => {
-                                setTar([proo.id, true])
-                                setShow(!toShow);
-                                getProduct(proo.id);
-                            }
-                        }></i>}
+        <div className=" total_container">
+            {item.map((proo, ind) => {
+                return (
+                    <div key={proo.id} className='indiv_container'>
+                        <img src={proo.image} alt='' className="productImage" onClick={(e) => {
+                            setShow(!toShow)
+                            getProduct(proo.id)
+                        }} />
+                        <ul onClick={(e) => {
+                            setShow(!toShow)
+                            getProduct(proo.id)
+                        }} id='title'> {proo.title}</ul>
+                        <br></br>
+                        {(currTar[0] === proo.id && currTar[1]) ?
+                            <i className="fa-solid fa-circle-chevron-right fa-2x" id={proo.id} onClick={
+                                (e) => {
+                                    setShow(!toShow);
+                                    getProduct(proo.id);
+                                }}> </i> :
+                            <i className="fa-solid fa-circle-chevron-left fa-2x" id={proo.id} onClick={
+                                (e) => {
+                                    setTar([proo.id, true])
+                                    setShow(!toShow);
+                                    getProduct(proo.id);
+                                }
+                            }></i>}
 
-                </div>
-            )
-        })
+                    </div>
+                )
+            })}
+        </div>
     )
 
 

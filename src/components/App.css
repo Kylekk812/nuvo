@@ -5,7 +5,17 @@ body{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
+ .MobileMode{
+  max-width: 750px;
+  max-height: 1200px;
+  display: flex;
+}
 
+.DesktopMode{
+  max-width: 1200px;
+  max-height: 1200px;
+  display: flexbox;
+} 
 .container{
   display: flex;
 }
